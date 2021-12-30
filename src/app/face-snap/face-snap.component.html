@@ -1,4 +1,4 @@
-<div class="face-snap-card">
+<div class="face-snap-card" [ngClass]="{snapped: FaceSnap.statusSnap ? 'snapped' : ''}">
   <h2>{{FaceSnap.title}}</h2>
   <p>Mis en ligne le : {{FaceSnap.createDate.getDate()}} / {{FaceSnap.createDate.getMonth() + 1}} / {{FaceSnap.createDate.getFullYear()}}</p>
   <img [src]="FaceSnap.imageUrl" [alt]="FaceSnap.title">
@@ -8,6 +8,6 @@
   </p>
   <p>
     <button (click)="onSnap()">{{buttonText}}</button>
-    <span>{{FaceSnap.snaps}} ⭐️</span>
+    <span [ngStyle]="{color: 'rgb(0,' + FaceSnap.snaps + ',0)'}">{{FaceSnap.snaps}} ⭐️</span>
   </p>
 </div>
