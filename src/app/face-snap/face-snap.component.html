@@ -1,6 +1,7 @@
 <div class="face-snap-card" [ngClass]="{snapped: FaceSnap.statusSnap ? 'snapped' : ''}">
-  <h2>{{FaceSnap.title}}</h2>
-  <p>Mis en ligne le : {{FaceSnap.createDate.getDate()}} / {{FaceSnap.createDate.getMonth() + 1}} / {{FaceSnap.createDate.getFullYear()}}</p>
+  <p>{{ 43424623.3 | number: '1.0-0' }}</p>
+  <h2>{{FaceSnap.title | uppercase}}</h2>
+  <p>Mis en ligne {{FaceSnap.createDate | date: 'le dd/MM/yy à HH:mm'}}</p>
   <img [src]="FaceSnap.imageUrl" [alt]="FaceSnap.title">
   <p>{{FaceSnap.description}}</p>
   <p *ngIf="FaceSnap.location">
