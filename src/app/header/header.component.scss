@@ -1,8 +1,22 @@
-h2{
-  font-family: sans-serif;
-  width: 100%;
+header {
   text-align: center;
-  background: #73ff7a;
-  padding: 1rem;
-  margin: 0;
+  background-color: #eee;
+  h1 {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  color: #666;
+  text-decoration: underline;
 }
