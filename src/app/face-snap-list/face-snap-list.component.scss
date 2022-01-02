@@ -1,3 +1,11 @@
+.card{
+  height: calc(100vh - 80.47px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80.47px;
+}
+
 .card-snaps{
   display: flex;
   flex-wrap: wrap;

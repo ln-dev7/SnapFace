@@ -1,22 +1,36 @@
 header {
-  text-align: center;
-  background-color: #eee;
+  position: absolute;
+    box-shadow: lightgray 4px 4px 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   h1 {
-    padding: 1rem;
     text-align: center;
   }
-}
-
-a {
-  margin: 0 10px;
-  color: #333;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+  nav {
+    a {
+      font-weight: bold;
+      margin: 0 5px;
+      padding: 1rem;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border: 2px solid #000;
+      transition: opacity .3s ease;
+      &:hover{
+        opacity: .5;
+      }
+    }
+    .active {
+      background: #fff;
+      color: #000;
+    }
   }
-}
-
-.active {
-  color: #666;
-  text-decoration: underline;
 }
